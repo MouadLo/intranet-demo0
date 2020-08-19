@@ -1,0 +1,44 @@
+entity Group {
+	nomGroup String
+    abreviation String
+    niveau String
+}
+
+entity Etudiant {
+	cne String
+}
+
+entity Filiere {
+	nomFiliere String
+    abreviation String
+}
+
+entity Absence {
+
+}
+
+entity Horaire {
+	heureDepart Instant
+    heureFin Instant
+    dateJour Instant
+}
+
+entity Matiere {
+	nomMatiere String
+    abreviation String
+}
+
+relationship OneToMany {
+	Group to Filiere{group(abreviation)}
+
+    Horaire to Matiere{horaire}
+
+    Group to Etudiant
+}
+
+relationship ManyToOne {
+  Matiere{user(login)} to User
+  Absence{etudiant(cne)}  to Etudiant
+
+  Absence{horaire(heureDepart)} to Horaire
+}

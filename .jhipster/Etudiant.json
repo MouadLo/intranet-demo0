@@ -1,0 +1,27 @@
+{
+    "name": "Etudiant",
+    "fields": [
+        {
+            "fieldName": "cne",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "group",
+            "otherEntityRelationshipName": "etudiant",
+            "relationshipName": "group",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200819012819",
+    "entityTableName": "etudiant",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

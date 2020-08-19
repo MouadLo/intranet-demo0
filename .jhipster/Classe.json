@@ -1,0 +1,40 @@
+{
+    "name": "Classe",
+    "fields": [
+        {
+            "fieldName": "nomClasse",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "abreviation",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "niveau",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "filiere",
+            "otherEntityRelationshipName": "classe",
+            "relationshipName": "filiere"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "etudiant",
+            "otherEntityRelationshipName": "classe",
+            "relationshipName": "etudiant"
+        }
+    ],
+    "changelogDate": "20200819011036",
+    "entityTableName": "classe",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

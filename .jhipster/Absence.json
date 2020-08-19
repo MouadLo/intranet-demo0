@@ -1,0 +1,29 @@
+{
+    "name": "Absence",
+    "fields": [],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "etudiant",
+            "otherEntityRelationshipName": "absence",
+            "relationshipName": "etudiant",
+            "otherEntityField": "cne"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "horaire",
+            "otherEntityRelationshipName": "absence",
+            "relationshipName": "horaire",
+            "otherEntityField": "heureDepart"
+        }
+    ],
+    "changelogDate": "20200819012821",
+    "entityTableName": "absence",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

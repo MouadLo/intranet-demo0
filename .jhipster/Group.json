@@ -1,0 +1,40 @@
+{
+    "name": "Group",
+    "fields": [
+        {
+            "fieldName": "nomGroup",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "abreviation",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "niveau",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "filiere",
+            "otherEntityRelationshipName": "group",
+            "relationshipName": "filiere"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "etudiant",
+            "otherEntityRelationshipName": "group",
+            "relationshipName": "etudiant"
+        }
+    ],
+    "changelogDate": "20200819012818",
+    "entityTableName": "group",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

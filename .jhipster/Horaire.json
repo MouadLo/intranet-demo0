@@ -1,0 +1,34 @@
+{
+    "name": "Horaire",
+    "fields": [
+        {
+            "fieldName": "heureDepart",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "heureFin",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "dateJour",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "matiere",
+            "otherEntityRelationshipName": "horaire",
+            "relationshipName": "matiere"
+        }
+    ],
+    "changelogDate": "20200819012822",
+    "entityTableName": "horaire",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

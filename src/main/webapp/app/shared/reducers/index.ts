@@ -12,6 +12,30 @@ import activate, { ActivateState } from 'app/modules/account/activate/activate.r
 import password, { PasswordState } from 'app/modules/account/password/password.reducer';
 import settings, { SettingsState } from 'app/modules/account/settings/settings.reducer';
 import passwordReset, { PasswordResetState } from 'app/modules/account/password-reset/password-reset.reducer';
+// prettier-ignore
+import group, {
+  GroupState
+} from 'app/entities/group/group.reducer';
+// prettier-ignore
+import etudiant, {
+  EtudiantState
+} from 'app/entities/etudiant/etudiant.reducer';
+// prettier-ignore
+import filiere, {
+  FiliereState
+} from 'app/entities/filiere/filiere.reducer';
+// prettier-ignore
+import absence, {
+  AbsenceState
+} from 'app/entities/absence/absence.reducer';
+// prettier-ignore
+import horaire, {
+  HoraireState
+} from 'app/entities/horaire/horaire.reducer';
+// prettier-ignore
+import matiere, {
+  MatiereState
+} from 'app/entities/matiere/matiere.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 export interface IRootState {
@@ -25,6 +49,12 @@ export interface IRootState {
   readonly passwordReset: PasswordResetState;
   readonly password: PasswordState;
   readonly settings: SettingsState;
+  readonly group: GroupState;
+  readonly etudiant: EtudiantState;
+  readonly filiere: FiliereState;
+  readonly absence: AbsenceState;
+  readonly horaire: HoraireState;
+  readonly matiere: MatiereState;
   /* jhipster-needle-add-reducer-type - JHipster will add reducer type here */
   readonly loadingBar: any;
 }
@@ -40,6 +70,12 @@ const rootReducer = combineReducers<IRootState>({
   passwordReset,
   password,
   settings,
+  group,
+  etudiant,
+  filiere,
+  absence,
+  horaire,
+  matiere,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar
 });
